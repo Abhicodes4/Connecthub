@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search</title>
+    <link rel="stylesheet" href="{% static 'css/style5.css' %}">
+</head>
+<body>
+    <div class="searchbox" >
+        <form action="/search2">
+            <input  type="search" placeholder="Search" aria-label="Search" name="l">
+            <button  type="submit">Search</button></form>
+        {% if pros %}
+        {% for i in pros %}
+       <a href="/proview/{{i.id}}"> <div class="insearch"><img src="{{i.profile.profilepic.url}}"><h4>{{i.username}}</h4> </div> </a>
+        {% endfor %}
+        {% else %}
+        <h3>User not found..</h3>
+        {% endif %}
+        </div>
+    
+</body>
+</html>

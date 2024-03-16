@@ -1,0 +1,22 @@
+{% load widget_tweaks %}
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="{% static 'css/style9.css' %}">
+</head>
+<body>
+    <div class="box">
+        <form class="" method="post" enctype="multipart/form-data">
+            {% csrf_token %}
+            <p>Bio:</p> {% render_field pe.bio class="postloc"  %}
+            <p>Profile picture:</p> {% render_field pe.profilepic class="postloc"  %}
+           <br><br><br> <input type="submit" class="sub">
+            </form>
+        </div>
+</body>
+</html>

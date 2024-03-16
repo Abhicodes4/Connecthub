@@ -1,0 +1,32 @@
+.box{
+    width: 300px;
+    margin: auto;
+    align-items: center;
+    height: 300px;
+    margin-top: 120px;
+    border: 1px solid black;
+    
+   
+    
+}
+
+
+p{
+    margin-left: 30px;
+    position: relative;
+    top: 20px;
+}
+
+.postloc{
+    margin-left: 30px;
+    position: relative;
+    top: 20px;
+
+
+}
+
+input{
+    margin-left: 30px;
+    position: relative;
+    top: 20px;
+}

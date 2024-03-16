@@ -1,0 +1,64 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connecthub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="{% static 'css/style3.css' %}">
+</head>
+<body>
+    <div class="main">
+        <div class="part1">
+           <a href="/connecthub"><img src="{% static 'images/logo_transparent.png' %}" alt=""></a>
+           <a href=""><div class="select"><p><i class="fa-solid fa-house fa-lg" style="color: #000000;"></i>Home</p></div></a>
+           <a href="/search1"><div class="select"><p ><i class="fa-solid fa-magnifying-glass fa-lg" style="color: #000000;"></i>Search</p></div></a> 
+           <a href="/create1"><div class="select"><p><i class="fa-solid fa-plus fa-lg" style="color: #000000;"></i>Create</p></div></a>
+           <a href="/userview"><div class="select"><p id="pr">Profile</p></div></a> 
+           <a href=""><div class="select" id="extra"><p ><i  class="fa-solid fa-message fa-lg"  style="color: #020203;"></i>Messages</p></div></a>  
+           <img id="pro" src="{{user.profile.profilepic.url}}">
+           <p class="down">© 2024 CONNECTHUB </p>
+           </div>
+           
+        <div class="part2">
+        {% for i in posts %}
+        <div class="postdiv">
+        <!-- <div class="details"><a href=""><img src="{{i.us.profile.profilepic.url}}"><h3>{{i.us}}</h3></a><p>{{i.postlocation}}</p></div>   -->
+       <a><div class="details"><a href="">
+      
+
+        <img src="{{i.us.profile.profilepic.url}}" >
+
+       </a><h3>{{i.us}}</h3></a><p>{{i.postlocation}}</p></div>
+
+       
+
+        <div class="imagefield"> <img class="postimg" src="{{i.image.url}}" alt=""></div> 
+        <div class="caption" ><h3>{{i.caption}}</h3></div>
+        <div class="footer"><i class="fa-solid fa-heart fa-2xl"></i><i class="fa-solid fa-comment fa-2xl" style="color: #000000;"></i></div>
+       </div>
+        {% endfor %} 
+        </div>
+        <div class="part3">
+
+          {% if user.profile.profilepic %}
+          <img src="{{user.profile.profilepic.url}}" >
+  
+          
+          {% else %}
+  
+          <img src="{% static 'images/default2.png' %}" alt="">
+  
+          {% endif %}
+         <h2>{{user.username}}</h2><a class="what" href="/logouthub"><button class="btn">Logout</button></a>
+        </div>
+        </div>
+</div>
+
+
+ 
+
+  <script src="{% static 'javascript/js.js' %}"></script>     
+</body>
+</html>

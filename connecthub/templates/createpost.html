@@ -1,0 +1,24 @@
+{% load widget_tweaks %}
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create</title>
+    <link rel="stylesheet" href="{% static 'css/style7.css' %}">
+</head>
+<body>
+    <div class="main">
+    <div class="box">
+    <form class="frmcls" method="post" enctype="multipart/form-data">
+        {% csrf_token %}
+        <p>Postlocation:</p> {% render_field pof.postlocation class="postloc"  %}
+        <p>Image:</p> {% render_field pof.image class="postloc"  %}
+        <p>Caption:</p> {% render_field pof.caption  class="postloc" %}
+        <br><br><input type="submit" >
+        </form>
+    </div>
+</div>
+</body>
+</html>

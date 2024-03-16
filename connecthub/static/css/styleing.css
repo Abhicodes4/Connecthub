@@ -1,0 +1,424 @@
+body{
+    background-color: rgb(126,82,219);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+}
+
+.container{
+    display: flex;
+    justify-content: space-between;
+    height: 582px;
+    width: 1000px;
+    background-color: white;
+    margin: auto;
+    margin-top: 70px;
+    border-radius: 40px;
+    box-shadow:7px 7px 50px rgb(60,30,157);
+   
+}
+
+.container img{
+    display: flex;
+    width:400px;
+    height: 300px;
+    height: fit-content;
+    margin-left:6%;
+    margin-top: 23%;
+}
+
+
+
+
+
+.login{
+    margin-top: 120px;
+    padding-top: 40px;
+    padding-right: 120x;
+    padding-left: 30px;
+    position: relative;
+    bottom: 50px;
+    right: 80px;
+
+ }
+
+
+ .login h1{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(102, 57, 201);
+    font-weight: 600;
+    font-size:xx-large;
+     
+    
+ }
+
+ .login input{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border-radius: 5px;
+    margin-top: 30px;
+    width: 250px;
+    height: 35px;
+    margin-left: 35px;
+    border:1.5px solid black;
+    cursor: text;
+ }
+
+.login input:focus{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border:2px solid rgb(126,82,219);
+    outline: 1px solid  rgb(126,82,219);
+}
+
+#btn{
+    width: 100px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-left: 109px;
+    position: relative;
+    top: 18px;
+    background-color:rgb(126,82,219) ;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+#btn:hover{
+   
+    background-color:rgb(97, 53, 193) ;
+}
+
+
+.login a{
+    color: black;
+    margin-left: 100px;
+   position: relative;
+   top: 30px;
+}
+
+.ptag {
+    display: inline; 
+    margin-right: 10px;
+    position: relative;
+    left: 70px;
+    
+}
+
+.footerdiv{
+    margin-top: 65px;
+   
+}
+
+#atagdiv{
+     position: relative;
+     right: 65px;
+    
+}
+.footerdiv, .footerdiv span {
+    position: relative;
+    bottom: 32px;
+    right: 30px;
+}
+
+
+login,a:hover{
+    color: rgb(126,82,219);  
+    cursor: pointer;
+}
+
+#atagdiv:hover{
+    text-decoration: underline;
+    color: rgb(126,82,219)
+}
+
+
+
+login,.btn:hover{
+    cursor: pointer;
+}
+
+.log,.btn:focus{
+   
+    border: 0.5px yellow;
+    outline:0.5px yellow ;
+}
+
+.error{
+  position: relative;
+  left: 753px;
+  bottom: 130px;
+  width: 500px;
+  color: red;
+}
+
+
+@media only screen and (max-width: 991.20px) {
+    .login h1{
+        padding-left: 30px;
+        text-align: center ;
+      
+    }
+    .container img{
+       position: relative;
+       right: 38px;
+    }
+
+    #atagdiv{
+        position: relative;
+        left: 100px;
+        position: relative;
+        top: 20px;
+    }
+  .footerdiv span {
+           position: relative;
+           bottom: 44px;
+        }
+        
+        
+               
+    }
+    
+    @media only screen and (max-width: 767.20px){
+
+        .container img{
+            width: 230px;
+            margin-top: 30px;
+
+        }
+
+        .login h1{
+            position: relative;
+            left: 30px;
+            bottom:20px;
+        }
+        .login{
+            margin-left: 30px;
+            position: relative;
+            right: 200px;
+        }
+    }
+
+ @media only screen and (max-width: 575.20px)
+ {
+    .container{
+        width: 90%;
+    }
+ }
+
+ @media only screen and (max-width: 517.60px)
+ {
+    .container{
+        width: 465px;
+    }
+
+    .container img{
+        position: relative;
+        right: 50px;
+    }
+
+    .login{
+       position: relative;
+       right: 230px;
+    }
+ }
+
+ @media only screen and (max-width: 463.20px)
+ {
+    
+    .container{
+        width: 80%;
+    }
+
+    .container img{
+        margin-right: 10px;
+    }
+
+  
+     }
+
+
+
+ 
+ @media only screen and (max-width: 466px)
+    {
+        .container{
+            width: 80%;
+        }
+    
+        .container img{
+            position: relative;
+            left: 30px;
+           bottom: 25px;
+
+           
+        }
+    
+        .login{
+           position: relative;
+           top: 30px;
+           right:290px;
+        }
+
+        .container h1{
+            position: relative;
+            left: -4px;
+            top: 10px;
+
+        }
+
+ }
+
+ @media only screen and (max-width:450px)
+ {
+    
+    .container{
+        width: 80%;
+        margin-right: 30px;
+    }
+
+
+  
+     }
+
+
+     
+ @media only screen and (max-width:446px)
+ {
+    
+    .container{
+        width: 80%;
+        padding-right: 10px;
+    }
+
+
+  
+     }
+
+
+     @media only screen and (max-width:439.20px)
+     {
+        
+        .container{
+            width: 80%;
+           
+        }
+        .login{
+            padding-left: 15px;
+        }
+    
+    
+      
+         }
+
+
+
+         @media only screen and (max-width:406.40px)
+         {
+            
+            .container{
+                width: 85%;
+               
+            }
+            .login{
+                padding-left: 15px;
+            }
+        
+        
+          
+             }
+
+
+             
+         @media only screen and (max-width:387.20px)
+         {
+            .container{
+                width: 85%;
+               
+            }
+            .login{
+               position: relative;
+               right: 296px;
+            }
+
+            .container img{
+               position: relative;
+               left: 20px;
+               
+            }
+        }
+
+
+        @media only screen and (max-width:383.20px)
+        {
+           .container{
+               width: 85%;
+              
+           }
+           .login{
+              position: relative;
+              right: 295px;
+           }
+
+           .container img{
+              position: relative;
+              left: 20px;
+              
+           }
+       }
+
+
+          
+       @media only screen and (max-width:375.20px)
+       {
+          
+          .container{
+              width: 85%;
+             
+          }
+          .login{
+              position: relative;
+              right: 300px;
+          }
+
+          .container img{
+             position: relative;
+             left: 15px;
+             
+          }
+
+          
+      
+      
+        
+           }
+
+
+            
+             
+         @media only screen and (max-width:374.40px)
+         {
+            
+            .container{
+                width: 315px;
+               
+            }
+            .login{
+                padding-left: -10px ;
+
+            }
+
+            .container img{
+               position: relative;
+               left: 15px;
+               
+            }
+
+            
+        
+        
+          
+             }

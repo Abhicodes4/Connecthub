@@ -1,0 +1,152 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+
+.part1{
+    display: flex;
+    width:80%;
+    border-radius: 30px;
+    margin: auto;
+    position: relative;
+    top: 20px;
+    border:4px black solid;
+  
+}
+.part1 img{
+    width:17%;
+    border-radius: 50%;
+    position: relative;
+    left: 50px;
+    margin-top: 130px;
+    bottom: 50px;
+
+}
+
+.part1 h1{
+    position: relative;
+    left: 120px;
+    top: 120px;
+
+}
+
+.part1 h3{
+    margin-top: 190px;
+    position: relative;
+    right: 14px;
+
+
+}
+
+.postdiv{
+    background-color:rgb(126,82,219) ;
+    width:26%;
+    height: 590px;
+    border-radius: 15px;
+    margin-top: 80px;
+    margin-left: 83px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px, rgb(51, 51, 51) 0px 0px 0px 3px;
+    margin-bottom: 60px;
+    
+}
+
+.postdiv h3{
+    font-size: larger;
+    font-weight: bolder;
+
+}
+
+.postdiv p{
+    font-weight: 200;
+    position: relative;
+    bottom: 15px;
+    
+}
+
+.details{
+    margin-left: 12px;
+    align-items: center;
+    margin-top:-30px;
+    
+    
+   
+}
+
+.details img{
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    margin-left: 31px;
+    position: relative;
+    top: 60px;
+    right: 20px;
+}
+
+.details h3,p{
+    margin-left: 63px;
+
+}
+
+
+.footer{
+    display: flex;
+    justify-content: space-around;
+    margin-top: -25px;
+}
+
+
+.postimg{
+    display: flex;
+    width: 90%;
+    margin: auto;
+    position: relative;
+    top: 15px;
+    height: 390px;
+   
+}
+
+.caption h3{
+    margin-left: 20px;
+   position: relative;
+   bottom: 30px;
+}
+
+.imagefield{
+    height: 420px;
+    background-color: black;
+   position: relative;
+   bottom: 30px;
+}
+
+.edit{
+    margin-top: 32px;
+    padding-top: 50px;
+    height: 200px;
+    width: 35%;
+    padding-left: 20px;
+    margin-left: 80px;
+}
+
+.edit button{
+    width: 70%;
+    height: 52px;
+   margin-left: 40px;
+   margin-top: 25px;
+   border-radius: 20px;
+   font-size: large;
+   font-weight: bold;
+}
+
+
+.edit button:hover{
+   cursor: pointer;
+   background-color: rgb(126,82,219);
+   color: white;
+}
+
