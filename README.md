@@ -1,0 +1,1 @@
+Connect hub is a basic soocial meadia webiste built on django framework.It has basic operations of social media.Im continuing to upgrade it to add functions like comments and like.For testing ,Example user-Username-anandhu123 password-anandhu123 (this is an existing user).
